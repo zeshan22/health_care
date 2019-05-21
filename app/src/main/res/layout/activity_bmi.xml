@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#DEB887"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMI">
+
+
+    <TextView
+        android:id="@+id/text_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/BMI_text"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/text_03"
+        android:text="@string/BMI_text_01"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter the height in meters"
+        android:inputType="number|numberDecimal"
+        android:textColor="#000000"></EditText>
+    <TextView
+        android:id="@+id/text_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/BMI_text_02"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter the weight in kg"
+        android:inputType="number|numberDecimal"
+        android:textColor="#000000"></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your age:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter the Age"
+        android:inputType="number"
+        android:textColor="#F5F5F5"></EditText>
+
+    <Button
+        android:id="@+id/b_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+
+        android:onClick="calculateme"
+        android:text="@string/Calculate"
+        android:textColor="#FF4500"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/gobacktomenu"
+        android:text="@string/Button04"
+        android:textSize="20dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="80dp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:textColor="#FF4500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+
+</LinearLayout>
