@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15"
+    android:background="@drawable/ccc"
+    tools:context=".ViralDiseases_view">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+    </View>
+
+    <Button
+        android:id="@+id/b_viral"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:text="Viral Hepatitis"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+
+    <Button
+        android:id="@+id/b_mumps"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:text="mumps"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+
+    <Button
+        android:id="@+id/b_rabies"
+
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:text="Rabies"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+
+    <Button
+        android:id="@+id/b_ChickemPox"
+
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:text="Chicken Pox"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+
+    <Button
+        android:id="@+id/b_backk"
+
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+
+        android:textSize="20dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:text="BACK"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        />
+
+
+</LinearLayout>

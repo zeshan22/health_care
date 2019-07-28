@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/abs"
+    android:orientation="vertical"
+    android:weightSum="15"
+    tools:context=".PatientProfileSetting">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+    </View>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:src="@drawable/boy_1299626_640"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.2"
+        android:background="@color/colorAccent"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="addImage"
+        android:text="Add picture"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+package com.firstapplication.user.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.github.barteksc.pdfviewer.PDFView;
+
+public class Tatanus extends AppCompatActivity {
+
+    PDFView pdfview3;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tatanus);
+        pdfview3=(PDFView) findViewById(R.id.pdftatanus);
+
+        pdfview3.fromAsset("Tetanus .pdf").load();
+    }
+}

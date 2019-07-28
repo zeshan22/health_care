@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/abs"
+    android:layout_height="match_parent"
+    tools:context=".consultDoctor">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        >
+
+
+    <TextView
+
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How Doctor can help you today?"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black_overlay"
+        android:layout_marginLeft="20dp"
+        />
+        <EditText
+
+
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="20dp"
+            android:hint="e.g I am having flue and fever from 5 days"
+            android:textColor="#ffffff"
+            android:id="@+id/textArea_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:lines="6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false" />
+
+        <TextView
+
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attach any reports and prescription you would like to share?"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black_overlay"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <ImageView
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc"
+
+            />
+
+        <TextView
+
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to attach"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black_overlay"
+            android:layout_marginLeft="20dp"
+            />
+
+
+        <Button
+
+            android:id="@+id/consultDoc"
+            android:textAlignment="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Next"
+
+            android:layout_marginLeft="20dp"
+
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+
+
+            />
+
+     </LinearLayout>
+
+</RelativeLayout>

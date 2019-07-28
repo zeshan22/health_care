@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.firstapplication.user.myapplication">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/myimage"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".docAppointment"></activity>
+        <activity android:name=".next2video"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity android:name=".consultDoctor"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".SnakeBite" />
+
+        <activity android:name=".Burn" />
+        <activity android:name=".Poisoning" />
+        <activity android:name=".Murder" />
+        <activity android:name=".SunStroke" />
+        <activity android:name=".Drowning" />
+        <activity android:name=".AIP" />
+        <activity android:name=".Bronchitis" />
+        <activity android:name=".Asthma" />
+        <activity android:name=".Pneumonia" />
+        <activity android:name=".Respiratory_Diseases" />
+        <activity android:name=".ChickenPox" />
+        <activity android:name=".Rabies" />
+        <activity android:name=".Mumps" />
+        <activity android:name=".Viral_Hepatitis" />
+        <activity android:name=".Tatanus" />
+        <activity android:name=".Whooping_Cough" />
+        <activity android:name=".Diphtheria" />
+        <activity android:name=".FoodPosioning" />
+        <activity android:name=".TyphoidFever" />
+        <activity android:name=".Diet_Plan_for_Obesity" />
+        <activity android:name=".Diet_Plan_for_Overweight" />
+        <activity android:name=".Diet_Plan_for_Normal" />
+        <activity android:name=".Diet_Plan_for_Underweight" />
+        <activity android:name=".dietplan" />
+        <activity android:name=".SPLASH">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mainmenu" />
+        <activity android:name=".Exit" />
+        <activity android:name=".BMI" />
+        <activity android:name=".WelcomePage" />
+        <activity android:name=".ChooseSpeciality" />
+        <activity android:name=".delay1afterwelcomepage" />
+        <activity android:name=".Query" />
+        <activity android:name=".Diseases" />
+        <activity android:name=".IntestinalInfectionsView" />
+        <activity android:name=".Cholera" />
+        <activity android:name=".ViralDiseases_view" />
+        <activity android:name=".BacterialDiseases" />
+        <activity android:name=".identifytheuser" />
+        <activity android:name=".BMIresults" />
+        <activity android:name=".PrimaryLogin" />
+        <activity android:name=".DoctorSignInActivity" />
+        <activity android:name=".PatientSignInActivity" />
+        <activity android:name=".PatientHome" />
+        <activity android:name=".PatientSignUp" />
+        <activity android:name=".PatientProfile" />
+        <activity android:name=".PatientProfileSetting" />
+        <activity android:name=".DoctorList" />
+        <activity android:name=".DoctorHome" />
+        <activity android:name=".Doctor.DoctorProfile" />
+        <activity android:name=".Doctor.DoctorSetting" />
+        <activity android:name=".DoctorDetails" />
+        <activity android:name=".ChatActivity"
+
+         android:windowSoftInputMode="adjustPan"
+
+            />
+        <activity android:name=".Doctor.DoctorChatActivity" />
+        <activity android:name=".PatientDirectory.PatientInbox" />
+        <activity android:name=".PatientDirectory.PatientChatActivity" />
+        <activity android:name=".Doctor.Prescription" />
+        <activity android:name=".Doctor.DoctorPrescriptionList" />
+        <activity android:name=".Aids" />
+        <activity android:name=".others" />
+        <activity android:name=".PatientDirectory.PrescriptionList" /> <!-- for PickImage Library -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

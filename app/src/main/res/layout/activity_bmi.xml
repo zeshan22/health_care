@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="15"
+
+    android:background="@drawable/abs"
+    tools:context=".BMI">
+
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </View>
+
+    <TextView
+
+        android:layout_gravity="center"
+        android:id="@+id/text_01"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/BMI_text"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </View>
+
+    <TextView
+        android:id="@+id/text_03"
+        android:text="@string/BMI_text_01"
+        android:textSize="20dp"
+        android:layout_marginLeft="19dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+
+
+    <EditText
+        android:id="@+id/edit_first"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_weight="2"
+        android:hint="Enter the height in meters"
+        android:inputType="number|numberDecimal"
+        android:textColor="#000000">
+
+    </EditText>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </View>
+
+    <TextView
+        android:id="@+id/text_04"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="19dp"
+        android:text="@string/BMI_text_02"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+
+    <EditText
+        android:id="@+id/edit_second"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_weight="2"
+        android:hint="Enter the weight in kg"
+        android:inputType="number|numberDecimal"
+        android:textColor="#000000">
+
+    </EditText>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Enter your age:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="19dp">
+    </TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+    </View>
+    <EditText
+        android:id="@+id/edit_third"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:hint="Enter the Age"
+        android:inputType="number"
+        android:layout_gravity="center"
+        android:textColor="#000000">
+
+
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </View>
+
+    <Button
+        android:id="@+id/b_cal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:text="@string/Calculate"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </View>
+    <Button
+        android:id="@+id/gobacktomenu"
+        android:text="@string/Button04"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </Button>
+
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+
+</LinearLayout>
